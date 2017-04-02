@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[hahaha]]></title>
+      <url>%2Ftest%2Fhahaha%2F</url>
+      <content type="text"><![CDATA[title onei see what happened.This is a message!]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[cloud]]></title>
+      <url>%2Fnotes%2Fcloud%2F</url>
+      <content type="text"><![CDATA[同步测试！我的测试广告牌。1code block code line title1 list-1 list-2 title2]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[test]]></title>
+      <url>%2Ftest%2Ftest%2F</url>
+      <content type="text"><![CDATA[testmore text…]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>%2Fnotes%2Fhello-world%2F</url>
+      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    </entry>
+
+    
+  
+  
+</search>
