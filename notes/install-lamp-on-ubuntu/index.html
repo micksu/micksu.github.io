@@ -100,7 +100,7 @@
 <meta property="og:image" content="http://images.ericksu.com/apache2_info_page.png">
 <meta property="og:image" content="http://images.ericksu.com/phpinfo_page.png">
 <meta property="og:image" content="http://images.ericksu.com/phpmyadmin_setup.png">
-<meta property="og:updated_time" content="2017-04-04T13:33:47.000Z">
+<meta property="og:updated_time" content="2017-04-04T13:39:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu14.04安装LAMP环境">
 <meta name="twitter:description" content="虽然有脚本一键安装，但是我更想清楚的知道，每一步我干了什么。安装环境基于DigitalOcean 的 Ubuntu 14.04.4 LTS VPS 服务器，使用Mac自带的终端、ROOT权限连接VPS。
@@ -384,8 +384,8 @@
 <p>如果安装成功，会看到下面这个页面：<br><img src="http://images.ericksu.com/apache2_info_page.png" alt="apache2_info_page"></p>
 <p>如果你是想安装wordpress之类的程序，可能要用到rewrite功能，这里我们直接就把它开启了，执行：<br><code>undefined</code><br><code>a2enmod rewrite</code></p>
 <p>即启用了Mod_rewrite模块。<br>接着要用VIM修改一个配置文件:<br><code>vim /etc/apache2/apache2.conf</code></p>
-<p>将其中所有的：<br><code>AllowOverride None</code><br>修改为：<br><code>AllowOverride All</code><br>最后，重启Apache：<br><code>service apache2 restart</code><br>VIM操作提示：</p>
-<p>i 编辑模式，如果要拷贝代码进去一定先进入编辑模式，按esc退出编辑模式。<br><strong>:wq</strong> 退出并保存。<br><strong>:q!</strong> 退出并放弃保存。</p>
+<p>将其中所有的：<br><code>AllowOverride None</code><br>修改为：<br><code>AllowOverride All</code><br>最后，重启Apache：<br><code>service apache2 restart</code></p>
+<p>VIM操作提示：<br>i 编辑模式，如果要拷贝代码进去一定先进入编辑模式，按esc退出编辑模式。<br><strong>:wq</strong> 退出并保存。<br><strong>:q!</strong> 退出并放弃保存。</p>
 <h3 id="第二步-安装MySQL"><a href="#第二步-安装MySQL" class="headerlink" title="第二步 安装MySQL"></a>第二步 安装MySQL</h3><p>执行：<br><code>apt-get install mysql-server php5-mysql</code></p>
 <p>安装过程中需要你设置MySQL的ROOT用户密码，之后还需要用命令配置一下。</p>
 <p>首先要告诉MySQL在它存储数据的地方创建数据库目录结构：<br><code>mysql_install_db</code></p>
