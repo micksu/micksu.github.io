@@ -94,7 +94,7 @@
 <meta property="og:image" content="http://images.ericksu.com/apache2_info_page.png">
 <meta property="og:image" content="http://images.ericksu.com/phpinfo_page.png">
 <meta property="og:image" content="http://images.ericksu.com/phpmyadmin_setup.png">
-<meta property="og:updated_time" content="2017-04-04T14:20:37.000Z">
+<meta property="og:updated_time" content="2017-04-06T02:14:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu14.04安装LAMP环境">
 <meta name="twitter:description" content="虽然有脚本一键安装，但是我更想清楚的知道，每一步我干了什么。安装环境基于DigitalOcean 的 Ubuntu 14.04.4 LTS VPS 服务器，使用Mac自带的终端、ROOT权限连接VPS。">
@@ -414,18 +414,18 @@
 <p>如果打开提示 404 错误，即 Not Found ，在putty或终端里面执行如下命令：<br><code>ln -s /usr/share/phpmyadmin /var/www/html/</code></p>
 <p>然后再访问。</p>
 <h4 id="可能遇到的问题："><a href="#可能遇到的问题：" class="headerlink" title="可能遇到的问题："></a>可能遇到的问题：</h4><ol>
-<li>在启动 apache2 时出现：</li>
-</ol>
+<li><p>在启动 apache2 时出现：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Starting httpd: httpd: apr_sockaddr_info_get() failed for MYHOST</div><div class="line">httpd: Could not reliably determine the server&apos;s fully qualified domain name, using 127.0.0.1 for ServerName.</div></pre></td></tr></table></figure>
 <p>这个问题应该是没有在 <code>/etc/httpd/conf/httpd.conf</code> 中设定 ServerName 所以它会用主机上的名称来取代，首先会去找 /etc/hosts 中有没有主机的定义。</p>
 <p>所以要解决这个问题可以设定 ServerName 或者在 /etc/hosts 中填入自己的主机名称 MYHOST，像这样∶<br><code>vim /etc/hosts</code><br><code>127.0.0.1 localhost.localdomain localhost 主机名</code><br>就可以解决了 =)</p>
 <p><strong>注意：</strong></p>
 <p>当前系统的主机名请以 hostname 命令为准，<code>/etc/sysconfig/network</code>中的HOSTNAME设置有可能不一致。<br><code>/etc/sysconfig/network</code> 默认主机名是：<code>HOSTNAME=localhost.localdomain</code></p>
-<ol>
-<li>进入phpmyadmin，底部出现：缺少 mcrypt 扩展，请检查 php 配置。<br>一般来说，上面的做完了，其实mcrypt是已经安装好的了。</li>
-</ol>
+</li>
+<li><p>进入phpmyadmin，底部出现：缺少 mcrypt 扩展，请检查 php 配置。<br>一般来说，上面的做完了，其实mcrypt是已经安装好的了。</p>
 <p>我们只需要执行：<br><code>cd /etc/php5/apache2/conf.d/</code><br><code>ln -s ../../conf.d/mcrypt.ini ./20-mcrypt.ini</code><br><code>service apache2 restart</code></p>
 <p>重启apache2后，完工。</p>
+</li>
+</ol>
 
       
     </div>
