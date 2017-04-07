@@ -3,22 +3,36 @@
   
     
     <entry>
+      <title><![CDATA[移动设计规范]]></title>
+      <url>%2Fdesign%2Fmobile-ui-design-standard.html</url>
+      <content type="text"><![CDATA[test design.]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[还念那片风景——新疆]]></title>
+      <url>%2Fphotography%2Fphotos-about-xinjiang.html</url>
+      <content type="text"><![CDATA[test photography!]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[我的Hexo静态博客方案：让NAS来帮忙]]></title>
-      <url>%2Fnotes%2Fhexo-in-nas%2F</url>
+      <url>%2Fnotes%2Fhexo-in-nas.html</url>
       <content type="text"><![CDATA[之前的Wordpress博客总是被人挂广告。对于我这种非专业人士，实在不想再去折腾。想过之后，决定放弃Wordpress，转而搭建静态博客，一来不会再为PHP程序和数据库操心，二来静态博客对空间要求很低（图片等附件全由对象存储来解决，不占空间），而且有很多免费的空间可以用来搭建静态网站。（比如一些对象存储服务，可以直接用来做静态网站，并且有免足够的免费额度，还有Github Pages）。几经搜索和考量后，选择了Hexo。 Hexo官方有很详尽的多语言文档说明，这是吸引我的地方，稍微学习一下就可以顺利的跑起来了。 不过也一点担忧：如果出门在外，又想写博客，怎么办？要做的事还真不少： 需要一个网盘同步博客的源文件。 找一台计算机，重新配置Hexo环境，安装同步软件。 写文章，并且同步到网盘里，以便回家后继续写作。 也有其他方法，像在Github上做一个分支存放源文件，用的时候Pull下来，这对我来说有点烧脑子。 或者购买VPS搭建Hexo，这样随时随地可以在线写作了。但是这些方法不是又回到了折腾的原点了吗（还更花钱T-T）。 虽然配置Hexo环境，并不复杂，但是这一系列动作着实让人觉得很恼火：我只是想静静的、静静的写点东西，换台电脑后，却又像个新手程序员一样开始边查资料边配置电脑环境。 放弃Wordpress的初衷，就是因为不想折腾，这下好了，从一个坑掉到另一个坑… 突然，我注意到角落里的群晖NAS，想想为何不让它来帮我完成同步以及远程在线的任务呢？ 好吧，决定再捣腾这一次。 材料：群晖NAS服务器一台，安装CloudStation套件，安装Docker，在Docker中安装Ubuntu镜像（原谅我只会这么干），并在其中配置好Hexo环境，端口做好映射，以便利用DDNS远程访问。 达到的目的： 在本机写作时，利用CloudStation实时同步源文件至NAS，本机与NAS各有一个份相同的源文件。 外出时，随便一台计算机，浏览器访问NAS系统，或者SSH连接Docker中的Ubuntu，写好文章后上传至NAS并发布。 回家后，本机CloudStation自动同步回NAS中的源文件，好了，接着写。 在NAS里，我还可以利用WebStation做一个本地站点，虽然电信封了80端口，还可以利用其他端口或者https访问NAS里的网站。（现在有很多免费的SSL证书申请，七牛、腾讯云都有，时效一年，到期再申请。） 至此，我想要的已经解决了。 … 忽然发现，我还是在折腾…（这是命啊~）]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[2017——在湘西的第二个春节]]></title>
-      <url>%2Fnotes%2F2017-new-year-in-xiangxi%2F</url>
+      <url>%2Flife%2F2017-new-year-in-xiangxi.html</url>
       <content type="text"><![CDATA[坐上高铁，越往北越发觉得寒冷。来之前，一想到去年的这个时候在这边冷成狗，一把鼻涕一把泪的就心生恐惧。到了目的地，出乎意料的，不知是有些习惯了，还是准备的比较充分，今年老丈人家这边感觉并不算太冷。 第一个晚上平静的度过了，就是孩子有点着凉，一吹点风就双龙出洞。好在精神不错，见人不认生，活泼好动，值得欣慰。 第一晚吃的特色菜，我管它叫一锅炖，样子看起来着实让人没什么食欲，好在吃饭的地方都很昏暗，也就看不清了，但实际上味道还是不错的。 这里的人家厨房基本都有一个火坑，架口锅，逢年过节都是围一圈吃大锅菜，很热闹，就是那小板凳让我这个胖子坐起来难受，何况还是在吃饭。 火坑正上方一般都挂着熏肉、腊肠。个人觉得味道还行，经常吃我就受不了了，烟熏味太重。 今天跑去集市准备年货，还是一样的人山人海，右脚底的疼痛让人有点点烦躁。这里时不时地下点毛毛雨，只要不刮风，温度还是能忍受的。 这里有个很显著的特色，也很有趣，去买东西的大妈基本人人背个背篓，到超市去的时候就会像这样把背篓都集中放到物品寄存处，很是壮观。 在这里，有一点让我出乎意料的：去这儿的小卖铺买电池和饮料，价格竟然和深圳的一些景区商店差不多。这里可是乡村啊。 老丈人家去县城只有一条路，按距离来说虽然崎岖开车也就十分钟路程，可惜的是这条路只能一路强力电动按摩似的跑半个多小时才到县城。 冬天来这里，除了阴冷，乡村的空气不错，蔬菜好吃，来了两次后，我已经没有之前那么强烈的抗拒心理了。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[Ubuntu14.04安装LAMP环境]]></title>
-      <url>%2Fnotes%2Finstall-lamp-on-ubuntu%2F</url>
+      <url>%2Fnotes%2Fubuntu1404-install-lamp.html</url>
       <content type="text"><![CDATA[虽然有脚本一键安装，但是我更想清楚的知道，每一步我干了什么。安装环境基于DigitalOcean 的 Ubuntu 14.04.4 LTS VPS 服务器，使用Mac自带的终端、ROOT权限连接VPS。 第一步 安装Apache为了避免出错，更新一下Ubuntu:apt-get update 然后可以执行安装Apache的命令了：apt-get install apache2 如果需要一并安装apache2的文档和一些附属工具，使用下面的命令：apt-get install apache2 apache2-doc apache2-utils 安装完成后用浏览器输入地址查看是否安装成功：http://你的IP地址 如果安装成功，会看到下面这个页面： 如果你是想安装wordpress之类的程序，可能要用到rewrite功能，这里我们直接就把它开启了，执行：undefineda2enmod rewrite 即启用了Mod_rewrite模块。接着要用VIM修改一个配置文件:vim /etc/apache2/apache2.conf 将其中所有的：AllowOverride None修改为：AllowOverride All最后，重启Apache：service apache2 restart VIM操作提示：i 编辑模式，如果要拷贝代码进去一定先进入编辑模式，按esc退出编辑模式。:wq 退出并保存。:q! 退出并放弃保存。 第二步 安装MySQL执行：apt-get install mysql-server php5-mysql 安装过程中需要你设置MySQL的ROOT用户密码，之后还需要用命令配置一下。 首先要告诉MySQL在它存储数据的地方创建数据库目录结构：mysql_install_db 然后运行一个简单的安全脚本来一出一些危险的默认设置以及降低数据库的访问权限：mysql_secure_installation 执行过程中，你要输入刚刚设置的root用户的密码，然后它会问你是否要修改密码，不想改的话，输入n，然后回车就好了。之后的一些问题，例如删除示例用户和数据、禁止远程root登录、MySQL实时响应等问题，直接敲回车就可以。 第三步 安装PHPPHP可以用来链接MySQL数据库，可以处理数据以在Web页面显示。我们用apt工具安装php以及一些有用的扩展包（php5-curl，php5-imagick等）：apt-get install php5 libapache2-mod-php5 php5-mcrypt php5-curl php5-imagick php5-cli 如果还需要其他php模块，可以通过下边这个命令查看有哪些可以使用：apt-cache search php5- 会看到： 12345678php5-cgi - server-side, HTML-embedded scripting language (CGI binary)php5-cli - command-line interpreter for the php5 scripting languagephp5-common - Common files for packages built from the php5 sourcephp5-curl - CURL module for php5php5-dbg - Debug symbols for PHP5php5-dev - Files for PHP5 module developmentphp5-gd - GD module for php5. . . 如果想查看某个包更详细的信息：apt-cache show package_name 目前，如果一个用户访问Server上的某一目录，Apache将会首先找一个名为index.html的文件，我们修改这个设置，让Apache首先找名为index.php的文件，首先以root身份用文本编辑器打开dir.cof文件：vim /etc/apache2/mods-enabled/dir.conf 我们看到的是类似这样的内容： 123&lt;IfModule mod_dir.c&gt;DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm&lt;/IfModule&gt; 我们只需要把index.php放到前边就可以了： 123&lt;IfModule mod_dir.c&gt;DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm&lt;/IfModule&gt; 修改完之后，输入 :wq 保存。 然后重启Apache web server：service apache2 restart 测试：我们要新建一个简单的PHP脚本，比如叫做info.php，为了让Apache能够正确找到这个文件的位置，我们把它放在一个叫做“Web root”的目录下。 在Ubuntu 14.04，“Web root”指向的是/var/www/html/。 我们可以这样新建脚本：vim /var/www/html/info.php 在打开的空白文件中输入： 123&lt;?phpphpinfo();?&gt; 完成之后，保存并关闭文件。 我们在浏览器地址栏输入：http://你的服务器的IP地址/info.php 然后你看到下边的页面，说明安装成功了： 测试成功后，最好删掉这个info.php文件，因为这个文件会让其他人看到你服务器的一些配置，输入下边的命令：rm /var/www/html/info.php 至此，LAMP算是基本安装完成了。 第四步 安装PHPMyAdmin来管理数据库便于管理MYSQL数据库，我们还是要安装PHPMyAdmin进行WEB管理数据库的。apt-get install phpmyadmin 安装的时候，要求我们选择版本支持： 选择APACHE2，然后回车继续，后面同样出现一个界面继续。然后弹出需要MYSQL ROOT用户密码，我们之前已经设置过，重复输入两次即可。 现在访问如下地址测试：http://IP地址或域名/phpmyadmin/ 如果打开提示 404 错误，即 Not Found ，在putty或终端里面执行如下命令：ln -s /usr/share/phpmyadmin /var/www/html/ 然后再访问。 可能遇到的问题： 在启动 apache2 时出现： 12Starting httpd: httpd: apr_sockaddr_info_get() failed for MYHOSThttpd: Could not reliably determine the server&apos;s fully qualified domain name, using 127.0.0.1 for ServerName. 这个问题应该是没有在 /etc/httpd/conf/httpd.conf 中设定 ServerName 所以它会用主机上的名称来取代，首先会去找 /etc/hosts 中有没有主机的定义。 所以要解决这个问题可以设定 ServerName 或者在 /etc/hosts 中填入自己的主机名称 MYHOST，像这样∶vim /etc/hosts127.0.0.1 localhost.localdomain localhost 主机名就可以解决了 =) 注意： 当前系统的主机名请以 hostname 命令为准，/etc/sysconfig/network中的HOSTNAME设置有可能不一致。/etc/sysconfig/network 默认主机名是：HOSTNAME=localhost.localdomain 进入phpmyadmin，底部出现：缺少 mcrypt 扩展，请检查 php 配置。一般来说，上面的做完了，其实mcrypt是已经安装好的了。 我们只需要执行：cd /etc/php5/apache2/conf.d/ln -s ../../conf.d/mcrypt.ini ./20-mcrypt.iniservice apache2 restart 重启apache2后，完工。]]></content>
     </entry>
 

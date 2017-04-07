@@ -69,7 +69,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="湘西,春节," />
+  <meta name="keywords" content="ubuntu,lamp,apache," />
 
 
 
@@ -85,24 +85,20 @@
 
 
 
-<meta name="description" content="坐上高铁，越往北越发觉得寒冷。来之前，一想到去年的这个时候在这边冷成狗，一把鼻涕一把泪的就心生恐惧。到了目的地，出乎意料的，不知是有些习惯了，还是准备的比较充分，今年老丈人家这边感觉并不算太冷。">
+<meta name="description" content="虽然有脚本一键安装，但是我更想清楚的知道，每一步我干了什么。安装环境基于DigitalOcean 的 Ubuntu 14.04.4 LTS VPS 服务器，使用Mac自带的终端、ROOT权限连接VPS。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2017——在湘西的第二个春节">
-<meta property="og:url" content="http://yemaobj.com/notes/2017-new-year-in-xiangxi/index.html">
+<meta property="og:title" content="Ubuntu14.04安装LAMP环境">
+<meta property="og:url" content="http://yemaobj.com/notes/ubuntu1404-install-lamp.html">
 <meta property="og:site_name" content="夜猫笔记">
-<meta property="og:description" content="坐上高铁，越往北越发觉得寒冷。来之前，一想到去年的这个时候在这边冷成狗，一把鼻涕一把泪的就心生恐惧。到了目的地，出乎意料的，不知是有些习惯了，还是准备的比较充分，今年老丈人家这边感觉并不算太冷。">
-<meta property="og:image" content="http://images.ericksu.com/IMG_3077.JPG">
-<meta property="og:image" content="http://images.ericksu.com/IMG_3090.JPG">
-<meta property="og:image" content="http://images.ericksu.com/IMG_3113.JPG">
-<meta property="og:image" content="http://images.ericksu.com/IMG_3121.JPG">
-<meta property="og:image" content="http://images.ericksu.com/IMG_3119.JPG">
-<meta property="og:image" content="http://images.ericksu.com/IMG_3115.JPG">
-<meta property="og:image" content="http://images.ericksu.com/IMG_3096.JPG">
-<meta property="og:updated_time" content="2017-04-04T13:34:48.000Z">
+<meta property="og:description" content="虽然有脚本一键安装，但是我更想清楚的知道，每一步我干了什么。安装环境基于DigitalOcean 的 Ubuntu 14.04.4 LTS VPS 服务器，使用Mac自带的终端、ROOT权限连接VPS。">
+<meta property="og:image" content="http://images.ericksu.com/apache2_info_page.png">
+<meta property="og:image" content="http://images.ericksu.com/phpinfo_page.png">
+<meta property="og:image" content="http://images.ericksu.com/phpmyadmin_setup.png">
+<meta property="og:updated_time" content="2017-04-07T07:14:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2017——在湘西的第二个春节">
-<meta name="twitter:description" content="坐上高铁，越往北越发觉得寒冷。来之前，一想到去年的这个时候在这边冷成狗，一把鼻涕一把泪的就心生恐惧。到了目的地，出乎意料的，不知是有些习惯了，还是准备的比较充分，今年老丈人家这边感觉并不算太冷。">
-<meta name="twitter:image" content="http://images.ericksu.com/IMG_3077.JPG">
+<meta name="twitter:title" content="Ubuntu14.04安装LAMP环境">
+<meta name="twitter:description" content="虽然有脚本一键安装，但是我更想清楚的知道，每一步我干了什么。安装环境基于DigitalOcean 的 Ubuntu 14.04.4 LTS VPS 服务器，使用Mac自带的终端、ROOT权限连接VPS。">
+<meta name="twitter:image" content="http://images.ericksu.com/apache2_info_page.png">
 
 
 
@@ -130,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yemaobj.com/notes/2017-new-year-in-xiangxi/"/>
+  <link rel="canonical" href="http://yemaobj.com/notes/ubuntu1404-install-lamp.html"/>
 
 
 
 
 
-  <title> 2017——在湘西的第二个春节 | 夜猫笔记 </title>
+  <title> Ubuntu14.04安装LAMP环境 | 夜猫笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -203,6 +199,46 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-design">
+          <a href="/categories/design/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-object-group"></i> <br />
+            
+            设计
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-photography">
+          <a href="/categories/photography/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-camera-retro"></i> <br />
+            
+            摄影
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-notes">
+          <a href="/categories/notes/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-flask"></i> <br />
+            
+            折腾
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-life">
+          <a href="/categories/life/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-coffee"></i> <br />
+            
+            生活
           </a>
         </li>
       
@@ -289,7 +325,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yemaobj.com/notes/2017-new-year-in-xiangxi/">
+    <link itemprop="mainEntityOfPage" href="http://yemaobj.com/notes/ubuntu1404-install-lamp.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Erick">
@@ -310,7 +346,7 @@
             
             
               
-                2017——在湘西的第二个春节
+                Ubuntu14.04安装LAMP环境
               
             
           </h1>
@@ -325,8 +361,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-09T02:03:44+08:00">
-                2017-02-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-19T21:07:28+08:00">
+                2016-05-19
               </time>
             
 
@@ -336,6 +372,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/notes/" itemprop="url" rel="index">
+                    <span itemprop="name">notes</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -344,7 +402,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a class="cloud-tie-join-count" href="/notes/2017-new-year-in-xiangxi/#comments" itemprop="discussionUrl">
+                <a class="cloud-tie-join-count" href="/notes/ubuntu1404-install-lamp.html#comments" itemprop="discussionUrl">
                   <span class="post-comments-count join-count" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -371,24 +429,65 @@
       
 
       
-        <p><img src="http://images.ericksu.com/IMG_3077.JPG" alt=""></p>
-<p>坐上高铁，越往北越发觉得寒冷。来之前，一想到去年的这个时候在这边冷成狗，一把鼻涕一把泪的就心生恐惧。到了目的地，出乎意料的，不知是有些习惯了，还是准备的比较充分，今年老丈人家这边感觉并不算太冷。</p>
+        <p>虽然有脚本一键安装，但是我更想清楚的知道，每一步我干了什么。安装环境基于DigitalOcean 的 Ubuntu 14.04.4 LTS VPS 服务器，使用Mac自带的终端、ROOT权限连接VPS。</p>
 <a id="more"></a>
-<p>第一个晚上平静的度过了，就是孩子有点着凉，一吹点风就双龙出洞。好在精神不错，见人不认生，活泼好动，值得欣慰。</p>
-<p>第一晚吃的特色菜，我管它叫一锅炖，样子看起来着实让人没什么食欲，好在吃饭的地方都很昏暗，也就看不清了，但实际上味道还是不错的。</p>
-<p>这里的人家厨房基本都有一个火坑，架口锅，逢年过节都是围一圈吃大锅菜，很热闹，就是那小板凳让我这个胖子坐起来难受，何况还是在吃饭。</p>
-<p><img src="http://images.ericksu.com/IMG_3090.JPG" alt=""></p>
-<p><img src="http://images.ericksu.com/IMG_3113.JPG" alt=""></p>
-<p>火坑正上方一般都挂着熏肉、腊肠。个人觉得味道还行，经常吃我就受不了了，烟熏味太重。</p>
-<p><img src="http://images.ericksu.com/IMG_3121.JPG" alt=""></p>
-<p><img src="http://images.ericksu.com/IMG_3119.JPG" alt=""></p>
-<p>今天跑去集市准备年货，还是一样的人山人海，右脚底的疼痛让人有点点烦躁。这里时不时地下点毛毛雨，只要不刮风，温度还是能忍受的。</p>
-<p>这里有个很显著的特色，也很有趣，去买东西的大妈基本人人背个背篓，到超市去的时候就会像这样把背篓都集中放到物品寄存处，很是壮观。</p>
-<p><img src="http://images.ericksu.com/IMG_3115.JPG" alt=""></p>
-<p>在这里，有一点让我出乎意料的：去这儿的小卖铺买电池和饮料，价格竟然和深圳的一些景区商店差不多。这里可是乡村啊。</p>
-<p>老丈人家去县城只有一条路，按距离来说虽然崎岖开车也就十分钟路程，可惜的是这条路只能一路强力电动按摩似的跑半个多小时才到县城。</p>
-<p><img src="http://images.ericksu.com/IMG_3096.JPG" alt=""></p>
-<p>冬天来这里，除了阴冷，乡村的空气不错，蔬菜好吃，来了两次后，我已经没有之前那么强烈的抗拒心理了。</p>
+<h3 id="第一步-安装Apache"><a href="#第一步-安装Apache" class="headerlink" title="第一步 安装Apache"></a>第一步 安装Apache</h3><p>为了避免出错，更新一下Ubuntu:<br><code>apt-get update</code></p>
+<p>然后可以执行安装Apache的命令了：<br><code>apt-get install apache2</code></p>
+<p>如果需要一并安装apache2的文档和一些附属工具，使用下面的命令：<br><code>apt-get install apache2 apache2-doc apache2-utils</code></p>
+<p>安装完成后用浏览器输入地址查看是否安装成功：<br><code>http://你的IP地址</code></p>
+<p>如果安装成功，会看到下面这个页面：<br><img src="http://images.ericksu.com/apache2_info_page.png" alt="apache2_info_page"></p>
+<p>如果你是想安装wordpress之类的程序，可能要用到rewrite功能，这里我们直接就把它开启了，执行：<br><code>undefined</code><br><code>a2enmod rewrite</code></p>
+<p>即启用了Mod_rewrite模块。<br>接着要用VIM修改一个配置文件:<br><code>vim /etc/apache2/apache2.conf</code></p>
+<p>将其中所有的：<br><code>AllowOverride None</code><br>修改为：<br><code>AllowOverride All</code><br>最后，重启Apache：<br><code>service apache2 restart</code></p>
+<p>VIM操作提示：<br>i 编辑模式，如果要拷贝代码进去一定先进入编辑模式，按esc退出编辑模式。<br><strong>:wq</strong> 退出并保存。<br><strong>:q!</strong> 退出并放弃保存。</p>
+<h3 id="第二步-安装MySQL"><a href="#第二步-安装MySQL" class="headerlink" title="第二步 安装MySQL"></a>第二步 安装MySQL</h3><p>执行：<br><code>apt-get install mysql-server php5-mysql</code></p>
+<p>安装过程中需要你设置MySQL的ROOT用户密码，之后还需要用命令配置一下。</p>
+<p>首先要告诉MySQL在它存储数据的地方创建数据库目录结构：<br><code>mysql_install_db</code></p>
+<p>然后运行一个简单的安全脚本来一出一些危险的默认设置以及降低数据库的访问权限：<br><code>mysql_secure_installation</code></p>
+<p>执行过程中，你要输入刚刚设置的root用户的密码，然后它会问你是否要修改密码，不想改的话，输入n，然后回车就好了。之后的一些问题，例如删除示例用户和数据、禁止远程root登录、MySQL实时响应等问题，直接敲回车就可以。</p>
+<h3 id="第三步-安装PHP"><a href="#第三步-安装PHP" class="headerlink" title="第三步 安装PHP"></a>第三步 安装PHP</h3><p>PHP可以用来链接MySQL数据库，可以处理数据以在Web页面显示。我们用apt工具安装php以及一些有用的扩展包（php5-curl，php5-imagick等）：<br><code>apt-get install php5 libapache2-mod-php5 php5-mcrypt php5-curl php5-imagick php5-cli</code></p>
+<p>如果还需要其他php模块，可以通过下边这个命令查看有哪些可以使用：<br><code>apt-cache search php5-</code></p>
+<p>会看到：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">php5-cgi - server-side, HTML-embedded scripting language (CGI binary)</div><div class="line">php5-cli - command-line interpreter for the php5 scripting language</div><div class="line">php5-common - Common files for packages built from the php5 source</div><div class="line">php5-curl - CURL module for php5</div><div class="line">php5-dbg - Debug symbols for PHP5</div><div class="line">php5-dev - Files for PHP5 module development</div><div class="line">php5-gd - GD module for php5</div><div class="line">. . .</div></pre></td></tr></table></figure>
+<p>如果想查看某个包更详细的信息：<br><code>apt-cache show package_name</code></p>
+<p>目前，如果一个用户访问Server上的某一目录，Apache将会首先找一个名为index.html的文件，我们修改这个设置，让Apache首先找名为index.php的文件，首先以root身份用文本编辑器打开dir.cof文件：<br><code>vim /etc/apache2/mods-enabled/dir.conf</code></p>
+<p>我们看到的是类似这样的内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;IfModule mod_dir.c&gt;</div><div class="line">DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm</div><div class="line">&lt;/IfModule&gt;</div></pre></td></tr></table></figure>
+<p>我们只需要把index.php放到前边就可以了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;IfModule mod_dir.c&gt;</div><div class="line">DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm</div><div class="line">&lt;/IfModule&gt;</div></pre></td></tr></table></figure>
+<p>修改完之后，输入 <strong>:wq</strong> 保存。</p>
+<p>然后重启Apache web server：<br><code>service apache2 restart</code></p>
+<p><strong>测试：</strong><br>我们要新建一个简单的PHP脚本，比如叫做info.php，为了让Apache能够正确找到这个文件的位置，我们把它放在一个叫做“Web root”的目录下。</p>
+<p>在Ubuntu 14.04，“Web root”指向的是<code>/var/www/html/</code>。</p>
+<p>我们可以这样新建脚本：<br><code>vim /var/www/html/info.php</code></p>
+<p>在打开的空白文件中输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">phpinfo();</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+<p>完成之后，保存并关闭文件。</p>
+<p>我们在浏览器地址栏输入：<br><code>http://你的服务器的IP地址/info.php</code></p>
+<p>然后你看到下边的页面，说明安装成功了：</p>
+<p><img src="http://images.ericksu.com/phpinfo_page.png" alt="phpinfo_page"></p>
+<p>测试成功后，最好删掉这个info.php文件，因为这个文件会让其他人看到你服务器的一些配置，输入下边的命令：<br><code>rm /var/www/html/info.php</code></p>
+<p>至此，LAMP算是基本安装完成了。</p>
+<h3 id="第四步-安装PHPMyAdmin来管理数据库"><a href="#第四步-安装PHPMyAdmin来管理数据库" class="headerlink" title="第四步 安装PHPMyAdmin来管理数据库"></a>第四步 安装PHPMyAdmin来管理数据库</h3><p>便于管理MYSQL数据库，我们还是要安装PHPMyAdmin进行WEB管理数据库的。<br><code>apt-get install phpmyadmin</code></p>
+<p>安装的时候，要求我们选择版本支持：</p>
+<p><img src="http://images.ericksu.com/phpmyadmin_setup.png" alt="phpmyadmin_setup"></p>
+<p>选择APACHE2，然后回车继续，后面同样出现一个界面继续。然后弹出需要MYSQL ROOT用户密码，我们之前已经设置过，重复输入两次即可。</p>
+<p>现在访问如下地址测试：<code>http://IP地址或域名/phpmyadmin/</code></p>
+<p>如果打开提示 404 错误，即 Not Found ，在putty或终端里面执行如下命令：<br><code>ln -s /usr/share/phpmyadmin /var/www/html/</code></p>
+<p>然后再访问。</p>
+<h4 id="可能遇到的问题："><a href="#可能遇到的问题：" class="headerlink" title="可能遇到的问题："></a>可能遇到的问题：</h4><ol>
+<li><p>在启动 apache2 时出现：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Starting httpd: httpd: apr_sockaddr_info_get() failed for MYHOST</div><div class="line">httpd: Could not reliably determine the server&apos;s fully qualified domain name, using 127.0.0.1 for ServerName.</div></pre></td></tr></table></figure>
+<p>这个问题应该是没有在 <code>/etc/httpd/conf/httpd.conf</code> 中设定 ServerName 所以它会用主机上的名称来取代，首先会去找 /etc/hosts 中有没有主机的定义。</p>
+<p>所以要解决这个问题可以设定 ServerName 或者在 /etc/hosts 中填入自己的主机名称 MYHOST，像这样∶<br><code>vim /etc/hosts</code><br><code>127.0.0.1 localhost.localdomain localhost 主机名</code><br>就可以解决了 =)</p>
+<p><strong>注意：</strong></p>
+<p>当前系统的主机名请以 hostname 命令为准，<code>/etc/sysconfig/network</code>中的HOSTNAME设置有可能不一致。<br><code>/etc/sysconfig/network</code> 默认主机名是：<code>HOSTNAME=localhost.localdomain</code></p>
+</li>
+<li><p>进入phpmyadmin，底部出现：缺少 mcrypt 扩展，请检查 php 配置。<br>一般来说，上面的做完了，其实mcrypt是已经安装好的了。</p>
+<p>我们只需要执行：<br><code>cd /etc/php5/apache2/conf.d/</code><br><code>ln -s ../../conf.d/mcrypt.ini ./20-mcrypt.ini</code><br><code>service apache2 restart</code></p>
+<p>重启apache2后，完工。</p>
+</li>
+</ol>
 
       
     </div>
@@ -417,7 +516,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://yemaobj.com/notes/2017-new-year-in-xiangxi/" title="2017——在湘西的第二个春节">http://yemaobj.com/notes/2017-new-year-in-xiangxi/</a>
+      <a href="http://yemaobj.com/notes/ubuntu1404-install-lamp.html" title="Ubuntu14.04安装LAMP环境">http://yemaobj.com/notes/ubuntu1404-install-lamp.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -433,9 +532,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/湘西/" rel="tag"># 湘西</a>
+            <a href="/tags/ubuntu/" rel="tag"># ubuntu</a>
           
-            <a href="/tags/春节/" rel="tag"># 春节</a>
+            <a href="/tags/lamp/" rel="tag"># lamp</a>
+          
+            <a href="/tags/apache/" rel="tag"># apache</a>
           
         </div>
       
@@ -448,18 +549,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/notes/install-lamp-on-ubuntu/" rel="next" title="Ubuntu14.04安装LAMP环境">
-                <i class="fa fa-chevron-left"></i> Ubuntu14.04安装LAMP环境
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/notes/hexo-in-nas/" rel="prev" title="我的Hexo静态博客方案：让NAS来帮忙">
-                我的Hexo静态博客方案：让NAS来帮忙 <i class="fa fa-chevron-right"></i>
+              <a href="/life/2017-new-year-in-xiangxi.html" rel="prev" title="2017——在湘西的第二个春节">
+                2017——在湘西的第二个春节 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -509,8 +606,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://images.ericksu.com/ymbj_hexo-theme-next_avatar.gif"
@@ -525,12 +631,21 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -538,7 +653,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -583,6 +698,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步-安装Apache"><span class="nav-number">1.</span> <span class="nav-text">第一步 安装Apache</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步-安装MySQL"><span class="nav-number">2.</span> <span class="nav-text">第二步 安装MySQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三步-安装PHP"><span class="nav-number">3.</span> <span class="nav-text">第三步 安装PHP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四步-安装PHPMyAdmin来管理数据库"><span class="nav-number">4.</span> <span class="nav-text">第四步 安装PHPMyAdmin来管理数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#可能遇到的问题："><span class="nav-number">4.1.</span> <span class="nav-text">可能遇到的问题：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
